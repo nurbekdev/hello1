@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Posts</title>
+</head>
+<body>
+    <a href="{% url 'home' %}">Bosh sahifa</a>
+    {% block content %}
+    <h1>{{post.title}}</h1>
+    <p>{{post.text}}</p>
+    {% endblock content %}
+
+</body>
+</html>

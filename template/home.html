@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nurbek12</title>
+</head>
+<body>
+    <h1>Kun Yangiliklar</h1>
+    {% for post in object_list %}
+    <ul>
+        <li>
+            <h2><a href="{% url 'post' post.pk %}">{{post.title}}</a></h2>
+            <p>{{post.text}}</p>
+        </li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
